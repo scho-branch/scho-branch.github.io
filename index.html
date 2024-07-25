@@ -99,7 +99,7 @@
 		});
 
 		// Take the Branch key from a meta tag
-		branch.init($('meta[name="branch_key"]').attr('content'), function(err, data) {
+		branch.init('key_live_eujQm9d9qqtFaV4pJyjfublkttowvHZH', function(err, data) {
 			// Avoid XSS by HTML escaping the data for display
 			$('#info').text(JSON.stringify(data));
 		});
